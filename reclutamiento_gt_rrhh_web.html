@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RECLUTAMIENTO GT RRHH - Reclutamiento, selección de personal, estudios socioeconómicos, pruebas poligráficas, toxicológicas y asesoría legal en Recursos Humanos.">
+<title>RECLUTAMIENTO GT RRHH | Soluciones de Talento y RRHH</title>
+<style>
+:root{
+  --navy:#071b3a; --blue:#0b63ce; --cyan:#11b5e4; --gold:#f6b51b;
+  --light:#f5f8fc; --dark:#10213b; --white:#fff; --green:#19a463;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--light);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+header{background:linear-gradient(135deg,var(--navy),#0b3d80);color:white;position:sticky;top:0;z-index:20;box-shadow:0 3px 18px #0002}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;font-size:1.15rem;letter-spacing:.4px}
+.logo span{color:var(--cyan)}
+nav{display:flex;gap:22px;align-items:center;font-weight:700;font-size:.93rem}
+nav a:hover{color:#7fe8ff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 21px;border-radius:999px;font-weight:800;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--gold);color:#18212d}
+.btn-whatsapp{background:var(--green);color:white}
+.btn-outline{border:2px solid white;color:white}
+.hero{background:radial-gradient(circle at 85% 15%,#19bfe755,transparent 30%),linear-gradient(135deg,#061a39,#0a4e9b);color:white;padding:90px 0 80px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff38;padding:8px 14px;border-radius:999px;font-weight:700;margin-bottom:20px}
+h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.02;margin-bottom:22px}
+.hero h1 span{color:#61def7}
+.hero p{font-size:1.16rem;color:#e6f3ff;max-width:680px;margin-bottom:28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-card{background:#ffffff12;border:1px solid #ffffff25;border-radius:28px;padding:28px;backdrop-filter:blur(8px)}
+.hero-card h3{font-size:1.35rem;margin-bottom:15px}
+.hero-card li{list-style:none;margin:12px 0}
+.hero-card li::before{content:"✓";color:#63e7b0;font-weight:900;margin-right:9px}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+.section-head h2{font-size:2.3rem;color:var(--navy);margin-bottom:10px}
+.section-head p{color:#5d6d82}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feature,.card{background:white;border-radius:22px;padding:26px;box-shadow:0 10px 30px #10213b12;border:1px solid #e4ebf4}
+.feature .icon{font-size:2rem;margin-bottom:12px}
+.feature h3{font-size:1.05rem;margin-bottom:8px}
+.feature p{font-size:.92rem;color:#64748b}
+.services{background:white}
+.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card h3{font-size:1.4rem;color:var(--navy);margin-bottom:14px}
+.card .price{color:var(--blue);font-weight:900;margin:16px 0}
+.checks{list-style:none}
+.checks li{margin:9px 0;color:#46566b}
+.checks li::before{content:"✓";color:var(--green);font-weight:900;margin-right:9px}
+.pricing{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:white;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px #10213b10}
+th{background:var(--navy);color:white;text-align:left;padding:16px}
+td{padding:15px;border-bottom:1px solid #e8edf3}
+td:last-child{font-weight:900;color:var(--blue)}
+tr:hover td{background:#f4f8fd}
+.cta{background:linear-gradient(135deg,#0a3c78,#0789bd);color:white}
+.cta .section-head h2{color:white}
+.cta .section-head p{color:#dcefff}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.contact{background:#ffffff12;border:1px solid #ffffff2d;border-radius:20px;padding:25px;text-align:center}
+.contact .big{font-size:1.8rem;margin-bottom:8px}
+.contact a{font-weight:800}
+footer{background:#041329;color:#b9c8da;padding:30px 0;text-align:center}
+footer strong{color:white}
+.small{font-size:.85rem;color:#7890aa;margin-top:10px}
+@media(max-width:900px){
+ .hero-grid{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}
+ .service-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}
+ nav{display:none}
+}
+@media(max-width:560px){
+ .features{grid-template-columns:1fr}
+ section{padding:55px 0}.hero{padding:65px 0}
+ .actions .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">RECLUTAMIENTO <span>GT RRHH</span></div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#precios">Precios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-whatsapp" href="https://wa.me/50258761226?text=Hola%20RECLUTAMIENTO%20GT%20RRHH,%20deseo%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">🚀 Soluciones profesionales para empresas</div>
+      <h1>Encuentra el <span>talento correcto</span> para tu empresa.</h1>
+      <p>Reclutamiento, selección, evaluaciones, estudios socioeconómicos y soluciones de Recursos Humanos con acompañamiento profesional.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#servicios">Ver nuestros servicios</a>
+        <a class="btn btn-outline" href="https://wa.me/50258761226?text=Hola,%20quiero%20una%20propuesta%20de%20RECLUTAMIENTO%20GT%20RRHH." target="_blank">Solicitar propuesta</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>¿Por qué trabajar con nosotros?</h3>
+      <ul>
+        <li>1 mes de garantía por contratación</li>
+        <li>Sin anticipos en reclutamiento</li>
+        <li>Psicométricas de personalidad incluidas</li>
+        <li>Seguimiento y coordinación de entrevistas</li>
+        <li>Pago al concretarse la contratación</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Una solución integral de RRHH</h2>
+      <p>Te acompañamos desde la definición del perfil hasta la contratación y evaluación del candidato.</p>
+    </div>
+    <div class="features">
+      <div class="feature"><div class="icon">🎯</div><h3>Reclutamiento</h3><p>Búsqueda y selección de candidatos de acuerdo con el perfil solicitado.</p></div>
+      <div class="feature"><div class="icon">🧠</div><h3>Evaluaciones</h3><p>Pruebas psicométricas, poligráficas y toxicológicas.</p></div>
+      <div class="feature"><div class="icon">🔍</div><h3>Verificación</h3><p>Estudios socioeconómicos y referencias para apoyar la toma de decisiones.</p></div>
+      <div class="feature"><div class="icon">⚖️</div><h3>Asesoría RRHH</h3><p>Servicios de asesoría legal en Recursos Humanos según la propuesta presentada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <h2>Nuestros servicios</h2>
+      <p>Servicios diseñados para ayudar a las empresas a contratar y evaluar talento.</p>
+    </div>
+    <div class="service-grid">
+      <div class="card">
+        <h3>👥 Reclutamiento y Selección</h3>
+        <ul class="checks">
+          <li>Definición y creación del perfil</li>
+          <li>Filtraje y evaluación de CV</li>
+          <li>Pre-entrevistas</li>
+          <li>Evaluación de competencias</li>
+          <li>Pruebas psicométricas</li>
+          <li>Verificación de referencias</li>
+          <li>Búsqueda activa en bases de datos y redes profesionales</li>
+          <li>Coordinación de entrevistas</li>
+          <li>Seguimiento continuo</li>
+          <li>1 mes de garantía</li>
+        </ul>
+        <div class="price">50% del valor de la posición + IVA</div>
+        <p>Sin anticipos. El cobro se realiza cuando se concreta la contratación.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔍 Estudios Socioeconómicos</h3>
+        <ul class="checks">
+          <li>Verificación de referencias personales y laborales</li>
+          <li>Consulta en bases de datos</li>
+          <li>Comprobación de 3 referencias laborales</li>
+          <li>Antecedentes penales y policiacos</li>
+          <li>Información de grupo familiar</li>
+          <li>Análisis de situación económica</li>
+          <li>Fotografías y documentación indicada</li>
+          <li>2 referencias de vecinos</li>
+          <li>Huellas dactilares y análisis de escritura</li>
+          <li>Informe final detallado</li>
+        </ul>
+        <div class="price">Ciudad de Guatemala: Q 469.00 · Departamental: Q 844.00</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="precios">
+  <div class="container">
+    <div class="section-head">
+      <h2>Pruebas y evaluaciones</h2>
+      <p>Tarifas según la propuesta proporcionada. Aplican restricciones en pruebas departamentales y descuentos por volumen.</p>
+    </div>
+    <div class="pricing">
+      <table>
+        <thead><tr><th>Servicio</th><th>Precio</th></tr></thead>
+        <tbody>
+          <tr><td>Prueba poligráfica preempleo</td><td>Q 375.00 c/u</td></tr>
+          <tr><td>Prueba poligráfica específica</td><td>Q 450.00 c/u</td></tr>
+          <tr><td>Rotación de 20 pruebas mensuales</td><td>Q 325.00 c/u</td></tr>
+          <tr><td>Pruebas departamentales (mínimo 6)</td><td>Q 600.00 c/u</td></tr>
+          <tr><td>Pruebas rutinarias</td><td>Q 375.00 c/u</td></tr>
+          <tr><td>Prueba toxicológica</td><td>Q 400.00 c/u</td></tr>
+          <tr><td>Pruebas psicométricas</td><td>Q 200.00 c/u</td></tr>
+          <tr><td>Publicación de vacantes</td><td>Q 800.00 c/u</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contacto">
+  <div class="container">
+    <div class="section-head">
+      <h2>¿Necesitas contratar personal?</h2>
+      <p>Conversemos sobre las plazas que necesitas cubrir y te presentamos una propuesta.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact">
+        <div class="big">💬</div>
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/50258761226" target="_blank">+502 5876-1226</a></p>
+        <p><a href="https://wa.me/50258162382" target="_blank">+502 5816-2382</a></p>
+      </div>
+      <div class="contact">
+        <div class="big">📧</div>
+        <h3>Correo electrónico</h3>
+        <p><a href="mailto:admonreclutamientogt@gmail.com">admonreclutamientogt@gmail.com</a></p>
+      </div>
+      <div class="contact">
+        <div class="big">☎️</div>
+        <h3>PBX</h3>
+        <p><a href="tel:+50223069747">2306-9747</a></p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:30px">
+      <a class="btn btn-primary" href="https://wa.me/50258761226?text=Hola%20RECLUTAMIENTO%20GT%20RRHH,%20quiero%20solicitar%20una%20propuesta%20para%20mi%20empresa." target="_blank">🚀 Solicitar propuesta por WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>RECLUTAMIENTO GT RRHH</strong>
+    <p>Su aliado estratégico para encontrar el talento que su empresa necesita. 🤝</p>
+    <p class="small">© 2026 RECLUTAMIENTO GT RRHH · Todos los derechos reservados.</p>
+  </div>
+</footer>
+</body>
+</html>
